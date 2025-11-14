@@ -69,7 +69,7 @@ export function NearbyServices({ location, language, className = '' }: NearbySer
         },
         {
           id: '3',
-          name: language === 'hi' ? 'फायर स्टेशन नंबर 1' : language === 'mr' => 'अग्निशमन केंद्र क्रमांक १' : 'Fire Station No. 1',
+          name: language === 'hi' ? 'फायर स्टेशन नंबर 1' : language === 'mr' ? 'अग्निशमन केंद्र क्रमांक १' : 'Fire Station No. 1',
           type: 'fire',
           location: { lat: location.lat + 0.005, lng: location.lng - 0.008 },
           distance: calculateDistance(location, { lat: location.lat + 0.005, lng: location.lng - 0.008 }),
