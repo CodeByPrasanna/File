@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import { Location } from '@/lib/types';
 import { isValidLocation, formatCoordinates } from '@/lib/utils';
 
