@@ -128,11 +128,11 @@ export function NearbyServices({ location, language, className = '' }: NearbySer
 
   const getStatusText = (status?: string) => {
     switch (status) {
-      case 'active': return language === 'hi' ? 'सक्रिय' : language === 'mr' => 'सक्रिय' : 'Active';
+      case 'active': return language === 'hi' ? 'सक्रिय' : language === 'mr' ? 'सक्रिय' : 'Active';
       case 'emergency_only': return language === 'hi' ? 'केवल आपातकालीन' : language === 'mr' ? 'फक्त आणीबाणी' : 'Emergency Only';
       case 'full': return language === 'hi' ? 'भरा हुआ' : language === 'mr' ? 'भरलेले' : 'Full';
-      case 'closed': return language === 'hi' ? 'बंद' : language === 'mr' => 'बंद' : 'Closed';
-      default: return language === 'hi' ? 'अज्ञात' : language === 'mr' => 'अज्ञात' : 'Unknown';
+      case 'closed': return language === 'hi' ? 'बंद' : language === 'mr' ? 'बंद' : 'Closed';
+      default: return language === 'hi' ? 'अज्ञात' : language === 'mr' ? 'अज्ञात' : 'Unknown';
     }
   };
 
